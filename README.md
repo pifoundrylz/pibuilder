@@ -46,27 +46,22 @@ The workflow is often:
 
 π Builder automates hydrology analysis using geospatial computation.
 
-The intended workflow:
+Intended Workflow(TBF):
 
 User selects location  
-↓
-
+↓  
 Catchment extraction  
-↓
-
+↓  
 Rainfall analysis  
-↓
-
+↓  
 Runoff estimation  
-↓
-
+↓  
 Flood discharge calculation  
-↓
-
+↓  
 High Flood Level (HFL) estimation  
-↓
+↓  
 Hydrology report  
-
+  
 
 The platform acts as an **engineering decision engine for infrastructure planning**.
 
