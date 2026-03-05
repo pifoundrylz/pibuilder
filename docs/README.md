@@ -1,6 +1,6 @@
-# Hydrology Platform Documentation
+# Pi Builder Platform Documentation
 
-Welcome to the Hydrology Platform project documentation.
+Welcome to the Pi Builder project documentation.
 
 This documentation is organized as a **wiki-style knowledge base**.
 
