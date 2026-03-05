@@ -1,6 +1,6 @@
-# PI Builder
+# π Builder
 
-**PI Builder** (Physical Infrastructure Builder) is a geospatial analysis platform for automated hydrology and infrastructure design support.
+**π Builder** (Physical Infrastructure Builder) is a geospatial analysis platform for automated hydrology and infrastructure design support.
 
 The system helps engineers estimate **design flood discharge and High Flood Level (HFL)** for infrastructure such as:
 
@@ -9,7 +9,7 @@ The system helps engineers estimate **design flood discharge and High Flood Leve
 - drainage crossings
 - highway structures
 
-PI Builder aims to automate hydrology workflows that are currently performed manually using GIS software, rainfall datasets, and engineering spreadsheets.
+π Builder aims to automate hydrology workflows that are currently performed manually using GIS software, rainfall datasets, and engineering spreadsheets.
 
 ---
 
@@ -17,7 +17,7 @@ PI Builder aims to automate hydrology workflows that are currently performed man
 
 Infrastructure engineers must determine the **design flood characteristics** for a location before designing hydraulic structures.
 
-This typically requires calculating:
+This tyπcally requires calculating:
 
 - catchment area
 - rainfall intensity
@@ -44,7 +44,7 @@ The workflow is often:
 
 # Vision
 
-PI Builder automates hydrology analysis using geospatial computation.
+π Builder automates hydrology analysis using geospatial computation.
 
 The intended workflow:
 
@@ -98,9 +98,9 @@ The platform acts as an **engineering decision engine for infrastructure plannin
 ---
 
 # Repository Structure
-pi-builder/
+π-builder/
   docs/ # project documentation and specifications
-  src/pi_builder/ # core source code
+  src/π_builder/ # core source code
   tests/ # automated tests
   data/ # datasets and sample inputs
   notebooks/ # exploration and analysis notebooks
@@ -130,8 +130,8 @@ Key documentation sections include:
 Clone the repository:
 
 git clone https://github.com/
-<your-username>/pi-builder.git
-cd pi-builder
+<your-username>/π-builder.git
+cd π-builder
 
 
 Create a Python environment:
@@ -141,13 +141,13 @@ source venv/bin/activate
 
 Install dependencies:
 
-pip install -r requirements.txt
+πp install -r requirements.txt
 
 ---
 
 # Current Development Status
 
-PI Builder is currently in **early development**.
+π Builder is currently in **early development**.
 
 The first milestone is implementing the **GIS watershed extraction engine**.
 
