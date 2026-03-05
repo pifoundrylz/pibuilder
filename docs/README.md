@@ -1,4 +1,4 @@
-# PI Builder – Engineering Specification
+# PI Builder – Engineering Spec
 
 PI Builder is a geospatial platform for automated hydrology analysis used in infrastructure planning (bridges, culverts, drainage systems).
 
