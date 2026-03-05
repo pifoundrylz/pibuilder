@@ -46,29 +46,32 @@ The workflow is often:
 
 Pi Builder automates hydrology analysis using geospatial computation.
 
-Intended Workflow(TBF):
 
-User selects location  
-↓  
-Catchment extraction  
-↓  
-Rainfall analysis  
-↓  
-Runoff estimation  
-↓  
-Flood discharge calculation  
-↓  
-High Flood Level (HFL) estimation  
-↓  
-Hydrology Report  
+# Basic Pi Builder Workflow
 
-flowchart LR
-A[Map Location] --> B[GIS Engine]
-B --> C[Rainfall Engine]
-C --> D[Hydrology Engine]
-D --> E[Hydraulics Engine]
-E --> F[Hydrology Report]
-  
+```mermaid
+flowchart TD
+
+    A[User Location] --> B[GIS Engine]
+
+    B --> C[Watershed Extraction]
+    C --> D[Catchment Area]
+
+    D --> E[Rainfall Engine]
+    E --> F[Rainfall Frequency Analysis]
+
+    F --> G[Hydrology Engine]
+    G --> H[Runoff & Discharge]
+
+    H --> I[Hydraulics Engine]
+    I --> J[HFL Estimation]
+
+    J --> K[Hydrology Report]
+
+    L[DEM Data] --> B
+    M[IMD Rainfall Data] --> E
+    N[Soil Data / IRC Tables] --> G
+```
 
 The platform acts as an **engineering decision engine for infrastructure planning**.
 
