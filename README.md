@@ -48,7 +48,7 @@ The workflow is often:
 
 The intended workflow:
 
-User selects location
+User selects location\n
 ↓
 
 Catchment extraction
