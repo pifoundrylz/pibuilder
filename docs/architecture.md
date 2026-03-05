@@ -7,41 +7,41 @@ flowchart TB
 U[Engineer / User]
 
 %% FRONTEND
-U --> UI[Web Map Interface]
+U --> UI[Web Map UI]
 
-%% BACKEND
-UI --> API[FastAPI Backend]
+%% API
+UI --> API[PI Builder API]
 
-%% COMPUTE MODULES
-API --> GIS[GIS Engine]
-API --> RAIN[Rainfall Engine]
-API --> HYDRO[Hydrology Engine]
-API --> HYDRAULIC[Hydraulics Engine]
+%% DOMAIN MODULES
+API --> GIS[GIS Module]
+API --> RAIN[Rainfall Module]
+API --> HYDRO[Hydrology Module]
+API --> HYDRAULIC[Hydraulics Module]
+API --> REPORT[Report Module]
 
-%% ENGINE FLOW
-GIS --> HYDRO
-RAIN --> HYDRO
-HYDRO --> HYDRAULIC
-
-%% OUTPUT
-HYDRAULIC --> REPORT[Report Generator]
-REPORT --> UI
+%% JOB WORKERS
+GIS --> WORKER[Compute Workers]
+RAIN --> WORKER
+HYDRO --> WORKER
+HYDRAULIC --> WORKER
 
 %% DATA
-DEM[(DEM Terrain Data)]
+DEM[(DEM Data)]
 RAIN_DATA[(Rainfall Data)]
 SOIL[(Soil / IRC Tables)]
-DB[(Spatial Database)]
+DB[(PostGIS Database)]
 
 DEM --> GIS
 RAIN_DATA --> RAIN
 SOIL --> HYDRO
 
-GIS --> DB
-RAIN --> DB
-HYDRO --> DB
-HYDRAULIC --> DB
+WORKER --> DB
+REPORT --> DB
+REPORT --> UI
 ```
+
+
+
 ## Core Components
 
 - UI
