@@ -1,35 +1,91 @@
-# PI Builder – Engineering Specification v1
+# PI Builder – Engineering Specification
 
-PI Builder is a geospatial platform designed to automate hydrology analysis for infrastructure projects such as bridges, culverts, and drainage systems.
+PI Builder is a geospatial platform for automated hydrology analysis used in infrastructure planning (bridges, culverts, drainage systems).
 
-This documentation pack provides the **technical blueprint** for building the platform.
+This documentation set provides the **technical blueprint for building the platform**.
 
-## Documentation Map
+---
 
-- product-overview.md
-- epc-hydrology-workflow.md
-- system-architecture.md
-- engineering-principles.md
-- repo-structure.md
+# Documentation Index
+
+## Product Context
+
+- [EPC Hydrology Workflow](epc-hydrology-workflow.md)
+
+## System Architecture
+
+- [System Architecture](system-architecture.md)
+- [Geospatial Processing Architecture](geospatial-processing-architecture.md)
 
 ## Core Engines
 
-- gis-engine.md
-- dem-processing-pipeline.md
-- watershed-algorithm-spec.md
+### GIS
 
-- rainfall-engine.md
-- rainfall-frequency-analysis.md
-- rainfall-data-pipeline.md
+- [GIS Engine](gis-engine.md)
+- [DEM Processing Pipeline](dem-processing-pipeline.md)
+- [Watershed Algorithm Specification](watershed-algorithm-spec.md)
 
-- hydrology-engine.md
-- discharge-calculation-methods.md
+### Rainfall Analysis
 
-- hydraulics-engine.md
-- hfl-calculation-methods.md
+- [Rainfall Engine](rainfall-engine.md)
+- [Rainfall Frequency Analysis](rainfall-frequency-analysis.md)
+- [Rainfall Data Pipeline](rainfall-data-pipeline.md)
 
-## Planning
+### Hydrology
 
-- mvp-roadmap.md
-- engineering-task-breakdown.md
-- sme-knowledge-extraction.md
+- [Hydrology Engine](hydrology-engine.md)
+- [Discharge Calculation Methods](discharge-calculation-methods.md)
+
+### Hydraulics
+
+- [Hydraulics Engine](hydraulics-engine.md)
+- [HFL Calculation Methods](hfl-calculation-methods.md)
+
+---
+
+## Engineering
+
+- [Engineering Principles](engineering-principles.md)
+- [Repository Structure](repo-structure.md)
+
+---
+
+## Execution
+
+- [MVP Roadmap](mvp-roadmap.md)
+- [Engineering Task Breakdown](engineering-task-breakdown.md)
+
+---
+
+## SME Collaboration
+
+- [SME Knowledge Extraction Guide](sme-knowledge-extraction.md)
+
+---
+
+# Recommended Reading Order
+
+For new engineers joining the project:
+
+1. EPC Hydrology Workflow
+2. System Architecture
+3. Geospatial Processing Architecture
+4. GIS Engine
+5. Rainfall Engine
+6. Hydrology Engine
+7. Hydraulics Engine
+8. MVP Roadmap
+
+---
+
+# Goal of the Platform
+
+The goal of PI Builder is to automate the workflow:
+
+Coordinate  
+→ Catchment extraction  
+→ Rainfall analysis  
+→ Runoff estimation  
+→ Flood discharge  
+→ High Flood Level  
+→ Hydrology report
