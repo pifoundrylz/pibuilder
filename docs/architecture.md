@@ -1,53 +1,45 @@
-# System Architecture v0.001
+# System Architecture v0.1
 
 ```mermaid
-flowchart LR
+flowchart TB
 
-%% User Layer
-A[User / Engineer] --> B[Web Map Interface]
+%% USER LAYER
+U[Engineer / User] --> UI[Web Map Interface]
 
-%% API Layer
-B --> C[PI Builder API]
+%% API LAYER
+UI --> API[PI Builder API]
 
-%% Core Engines
-C --> D[GIS Engine]
-C --> E[Rainfall Engine]
-C --> F[Hydrology Engine]
-C --> G[Hydraulics Engine]
+%% ENGINE LAYER
+API --> GIS[GIS Engine]
+API --> RAIN[Rainfall Engine]
+API --> HYDRO[Hydrology Engine]
+API --> HYDRAULIC[Hydraulics Engine]
+API --> REPORT[Report Generator]
 
-%% GIS Processing
-D --> H[Watershed Extraction]
-H --> I[Catchment Metrics]
+%% DATA FLOW BETWEEN ENGINES
+GIS --> HYDRO
+RAIN --> HYDRO
+HYDRO --> HYDRAULIC
+HYDRAULIC --> REPORT
 
-%% Rainfall Processing
-E --> J[Rainfall Data Cleaning]
-J --> K[Rainfall Frequency Analysis]
+%% DATA LAYER
+DEM[(DEM Terrain Data)]
+RAIN_DATA[(IMD Rainfall Data)]
+GAUGE[(Rain Gauge Stations)]
+SOIL[(Soil Maps / IRC Tables)]
+DB[(Spatial Database)]
 
-%% Hydrology
-I --> F
-K --> F
-F --> L[Runoff & Flood Discharge]
+DEM --> GIS
+RAIN_DATA --> RAIN
+GAUGE --> RAIN
+SOIL --> HYDRO
 
-%% Hydraulics
-L --> G
-G --> M[High Flood Level Estimation]
+GIS --> DB
+RAIN --> DB
+HYDRO --> DB
+HYDRAULIC --> DB
 
-%% Output
-M --> N[Hydrology Report Generator]
-N --> B
-
-%% Data Sources
-O[DEM Terrain Data] --> D
-P[IMD Rainfall Data] --> E
-Q[Rain Gauge Stations] --> E
-R[Soil Maps / IRC Tables] --> F
-
-%% Storage
-S[(Spatial Database)]
-D --> S
-E --> S
-F --> S
-G --> S
+REPORT --> UI
 ```
 
 
