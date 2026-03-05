@@ -50,16 +50,22 @@ The intended workflow:
 
 User selects location
 ↓
+
 Catchment extraction
 ↓
+
 Rainfall analysis
 ↓
+
 Runoff estimation
 ↓
+
 Flood discharge calculation
 ↓
+
 High Flood Level (HFL) estimation
 ↓
+
 Hydrology report
 
 
