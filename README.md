@@ -9,7 +9,7 @@ The system helps engineers estimate **design flood discharge and High Flood Leve
 - drainage crossings
 - highway structures
 
-pi Builder aims to automate hydrology workflows that are currently performed manually using multiple GIS software, rainfall datasets, and engineering spreadsheets.
+Pi Builder aims to automate hydrology workflows that are currently performed manually using multiple GIS software, rainfall datasets, and engineering spreadsheets.
 
 ---
 
