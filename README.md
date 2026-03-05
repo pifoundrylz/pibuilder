@@ -1,6 +1,6 @@
-# π Builder
+# Pi Builder
 
-**π Builder** is a geospatial analysis platform for automated hydrology and infrastructure design support.
+**Pi Builder** is a geospatial analysis platform for automated hydrology analysis and infrastructure planning / design support.
 
 The system helps engineers estimate **design flood discharge and High Flood Level (HFL)** for infrastructure such as:
 
@@ -9,7 +9,7 @@ The system helps engineers estimate **design flood discharge and High Flood Leve
 - drainage crossings
 - highway structures
 
-π Builder aims to automate hydrology workflows that are currently performed manually using GIS software, rainfall datasets, and engineering spreadsheets.
+pi Builder aims to automate hydrology workflows that are currently performed manually using multiple GIS software, rainfall datasets, and engineering spreadsheets.
 
 ---
 
@@ -17,7 +17,7 @@ The system helps engineers estimate **design flood discharge and High Flood Leve
 
 Infrastructure engineers must determine the **design flood characteristics** for a location before designing hydraulic structures.
 
-This tyπcally requires calculating:
+This typically requires calculating:
 
 - catchment area
 - rainfall intensity
@@ -44,7 +44,7 @@ The workflow is often:
 
 # Vision
 
-π Builder automates hydrology analysis using geospatial computation.
+Pi Builder automates hydrology analysis using geospatial computation.
 
 Intended Workflow(TBF):
 
@@ -60,7 +60,14 @@ Flood discharge calculation
 ↓  
 High Flood Level (HFL) estimation  
 ↓  
-Hydrology report  
+Hydrology Report  
+
+flowchart LR
+A[Map Location] --> B[GIS Engine]
+B --> C[Rainfall Engine]
+C --> D[Hydrology Engine]
+D --> E[Hydraulics Engine]
+E --> F[Hydrology Report]
   
 
 The platform acts as an **engineering decision engine for infrastructure planning**.
@@ -80,27 +87,9 @@ The platform acts as an **engineering decision engine for infrastructure plannin
 ---
 
 # Repository Structure
-
-The platform acts as an **engineering decision engine for infrastructure planning**.
-
----
-
-# Core System Components
-
-| Component | Description |
-|--------|--------|
-| GIS Engine | Watershed extraction and basin analysis from DEM |
-| Rainfall Engine | Rainfall frequency analysis and intensity estimation |
-| Hydrology Engine | Runoff and flood discharge calculations |
-| Hydraulics Engine | High Flood Level (HFL) estimation |
-| Report Engine | Automated hydrology report generation |
-
----
-
-# Repository Structure
-π-builder/
+pibuilder/
   docs/ # project documentation and specifications
-  src/π_builder/ # core source code
+  src/ # core source code
   tests/ # automated tests
   data/ # datasets and sample inputs
   notebooks/ # exploration and analysis notebooks
@@ -129,9 +118,9 @@ Key documentation sections include:
 
 Clone the repository:
 
-git clone https://github.com/
-<your-username>/π-builder.git
-cd π-builder
+git clone https://github.com/pifoundrylz/pibuilder
+<your-username>/pibuilder.git
+cd pibuilder
 
 
 Create a Python environment:
@@ -141,13 +130,13 @@ source venv/bin/activate
 
 Install dependencies:
 
-πp install -r requirements.txt
+pip install -r requirements.txt
 
 ---
 
 # Current Development Status
 
-π Builder is currently in **early development**.
+pi Builder is currently in **early development**.
 
 The first milestone is implementing the **GIS watershed extraction engine**.
 
