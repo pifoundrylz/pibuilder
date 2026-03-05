@@ -1,6 +1,6 @@
 # π Builder
 
-**π Builder** (Physical Infrastructure Builder) is a geospatial analysis platform for automated hydrology and infrastructure design support.
+**π Builder** is a geospatial analysis platform for automated hydrology and infrastructure design support.
 
 The system helps engineers estimate **design flood discharge and High Flood Level (HFL)** for infrastructure such as:
 
