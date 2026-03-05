@@ -1,19 +1,23 @@
-# PI Builder Documentation
+# Hydrology Platform Documentation
 
-PI Builder is a platform for automated hydrology and infrastructure analysis.
+Welcome to the Hydrology Platform project documentation.
 
-## Documentation
+This documentation is organized as a **wiki-style knowledge base**.
 
-- product-overview.md
-- hydrology-methodology.md
-- rainfall-engine.md
-- gis-engine.md
-- runoff-engine.md
-- hydraulics-engine.md
-- algorithms.md
-- data-sources.md
-- architecture.md
-- engineering-plan.md
-- sme-knowledge-capture.md
-- roadmap.md
-- glossary.md
+## Sections
+
+- [Product Overview](product-overview.md)
+- [Hydrology Methodology](hydrology-methodology.md)
+- [Rainfall Engine](rainfall-engine.md)
+- [GIS Engine](gis-engine.md)
+- [Runoff Engine](runoff-engine.md)
+- [Hydraulics Engine](hydraulics-engine.md)
+- [Algorithms](algorithms.md)
+- [Data Sources](data-sources.md)
+- [System Architecture](architecture.md)
+- [Engineering Plan](engineering-plan.md)
+- [SME Knowledge Capture](sme-knowledge-capture.md)
+- [Roadmap](roadmap.md)
+- [Glossary](glossary.md)
+
+Start with **Product Overview**.
