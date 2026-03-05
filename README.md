@@ -121,8 +121,7 @@ Key documentation sections include:
 
 Clone the repository:
 
-git clone https://github.com/pifoundrylz/pibuilder
-<your-username>/pibuilder.git
+git clone https://github.com/pifoundrylz/pibuilder.git
 cd pibuilder
 
 
