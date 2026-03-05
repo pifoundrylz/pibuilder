@@ -48,25 +48,24 @@ The workflow is often:
 
 The intended workflow:
 
-User selects location\n
+User selects location  
 ↓
 
-Catchment extraction
+Catchment extraction  
 ↓
 
-Rainfall analysis
+Rainfall analysis  
 ↓
 
-Runoff estimation
+Runoff estimation  
 ↓
 
-Flood discharge calculation
+Flood discharge calculation  
 ↓
 
-High Flood Level (HFL) estimation
+High Flood Level (HFL) estimation  
 ↓
-
-Hydrology report
+Hydrology report  
 
 
 The platform acts as an **engineering decision engine for infrastructure planning**.
