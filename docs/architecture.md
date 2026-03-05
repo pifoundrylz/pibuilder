@@ -1,53 +1,50 @@
-# System Architecture v0.1
+# System Architecture v0.001
 
 ```mermaid
 flowchart TB
 
-%% USER LAYER
-U[Engineer / User] --> UI[Web Map Interface]
+%% USER
+U[Engineer / User]
 
-%% API LAYER
-UI --> API[PI Builder API]
+%% FRONTEND
+U --> UI[Web Map Interface]
 
-%% ENGINE LAYER
+%% BACKEND
+UI --> API[FastAPI Backend]
+
+%% COMPUTE MODULES
 API --> GIS[GIS Engine]
 API --> RAIN[Rainfall Engine]
 API --> HYDRO[Hydrology Engine]
 API --> HYDRAULIC[Hydraulics Engine]
-API --> REPORT[Report Generator]
 
-%% DATA FLOW BETWEEN ENGINES
+%% ENGINE FLOW
 GIS --> HYDRO
 RAIN --> HYDRO
 HYDRO --> HYDRAULIC
-HYDRAULIC --> REPORT
 
-%% DATA LAYER
+%% OUTPUT
+HYDRAULIC --> REPORT[Report Generator]
+REPORT --> UI
+
+%% DATA
 DEM[(DEM Terrain Data)]
-RAIN_DATA[(IMD Rainfall Data)]
-GAUGE[(Rain Gauge Stations)]
-SOIL[(Soil Maps / IRC Tables)]
+RAIN_DATA[(Rainfall Data)]
+SOIL[(Soil / IRC Tables)]
 DB[(Spatial Database)]
 
 DEM --> GIS
 RAIN_DATA --> RAIN
-GAUGE --> RAIN
 SOIL --> HYDRO
 
 GIS --> DB
 RAIN --> DB
 HYDRO --> DB
 HYDRAULIC --> DB
-
-REPORT --> UI
 ```
-
-
-
-
 ## Core Components
 
-- Web Application
+- UI
 - API Layer
 - GIS Engine
 - Rainfall Engine
