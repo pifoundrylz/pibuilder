@@ -1,8 +1,12 @@
-# System Architecture
+# PI Builder — System Architecture
 
-PI Builder uses a **modular backend architecture** optimized for heavy geospatial computation.
+PI Builder is a **geospatial computation platform** designed to automate hydrology analysis for infrastructure design workflows such as bridges, culverts, and drainage structures.
 
-## Architecture Diagram
+The system separates responsibilities into modular layers so that heavy geospatial computations can scale while development remains fast during the MVP stage.
+
+---
+
+# Architecture Overview
 
 ```mermaid
 flowchart TB
@@ -32,12 +36,3 @@ GIS --> DB
 RAIN --> DB
 HYDRO --> DB
 HYDRAULIC --> DB
-```
-
-## Layers
-
-1. User Interface (map + project interface)
-2. API Layer (FastAPI)
-3. Domain Engines (GIS, Rainfall, Hydrology, Hydraulics)
-4. Compute Workers (heavy jobs)
-5. Data Layer (PostGIS + raster datasets)
